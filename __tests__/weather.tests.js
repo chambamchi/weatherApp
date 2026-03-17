@@ -35,8 +35,8 @@ describe('Weather Data Tests', () => {
         expect(header).toEqual(['timestamp', 'city', 'temperature', 'description'])
         expect(lines.length).toBeGreaterThan(1)
 
-        const firstDataRow = lines[1].split(',',
+        const firstDataRow = lines[1].split(',')
             expect(!isNumberTypeAnnotation(parseFloat(firstDataRow[2]))).toBe(true)
-        )
+        
     })
 })
